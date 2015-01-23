@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) NSString *name;
 
 @end
 

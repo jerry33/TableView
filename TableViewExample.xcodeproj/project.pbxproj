@@ -14,6 +14,8 @@
 		C41B6CA71A706D0E009B90AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41B6CA61A706D0E009B90AF /* Images.xcassets */; };
 		C41B6CAA1A706D0E009B90AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41B6CA81A706D0E009B90AF /* LaunchScreen.xib */; };
 		C41B6CB61A706D0E009B90AF /* TableViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CB51A706D0E009B90AF /* TableViewExampleTests.m */; };
+		C41B6CC01A71C4EB009B90AF /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */; };
+		C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CC21A71CF78009B90AF /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		C41B6CAF1A706D0E009B90AF /* TableViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41B6CB41A706D0E009B90AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41B6CB51A706D0E009B90AF /* TableViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewExampleTests.m; sourceTree = "<group>"; };
+		C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = ../../../../Downloads/SimpleTable/SimpleTable/creme_brelee.jpg; sourceTree = "<group>"; };
+		C41B6CC11A71CF78009B90AF /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		C41B6CC21A71CF78009B90AF /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		C41B6C981A706D0E009B90AF /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */,
 				C41B6C9D1A706D0E009B90AF /* AppDelegate.h */,
 				C41B6C9E1A706D0E009B90AF /* AppDelegate.m */,
 				C41B6CA01A706D0E009B90AF /* ViewController.h */,
@@ -89,6 +95,8 @@
 				C41B6CA61A706D0E009B90AF /* Images.xcassets */,
 				C41B6CA81A706D0E009B90AF /* LaunchScreen.xib */,
 				C41B6C991A706D0E009B90AF /* Supporting Files */,
+				C41B6CC11A71CF78009B90AF /* MyViewController.h */,
+				C41B6CC21A71CF78009B90AF /* MyViewController.m */,
 			);
 			path = TableViewExample;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C41B6CA51A706D0E009B90AF /* Main.storyboard in Resources */,
+				C41B6CC01A71C4EB009B90AF /* creme_brelee.jpg in Resources */,
 				C41B6CAA1A706D0E009B90AF /* LaunchScreen.xib in Resources */,
 				C41B6CA71A706D0E009B90AF /* Images.xcassets in Resources */,
 			);
@@ -221,6 +230,7 @@
 			files = (
 				C41B6CA21A706D0E009B90AF /* ViewController.m in Sources */,
 				C41B6C9F1A706D0E009B90AF /* AppDelegate.m in Sources */,
+				C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */,
 				C41B6C9C1A706D0E009B90AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
