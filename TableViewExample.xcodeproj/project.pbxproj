@@ -16,6 +16,8 @@
 		C41B6CB61A706D0E009B90AF /* TableViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CB51A706D0E009B90AF /* TableViewExampleTests.m */; };
 		C41B6CC01A71C4EB009B90AF /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */; };
 		C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CC21A71CF78009B90AF /* MyViewController.m */; };
+		C4B1F7001A73046E00F141DF /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F6FF1A73046E00F141DF /* Car.m */; };
+		C4B1F7031A7306D300F141DF /* CarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F7021A7306D300F141DF /* CarCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 		C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = ../../../../Downloads/SimpleTable/SimpleTable/creme_brelee.jpg; sourceTree = "<group>"; };
 		C41B6CC11A71CF78009B90AF /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		C41B6CC21A71CF78009B90AF /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		C4B1F6FE1A73046E00F141DF /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		C4B1F6FF1A73046E00F141DF /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		C4B1F7011A7306D300F141DF /* CarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCell.h; sourceTree = "<group>"; };
+		C4B1F7021A7306D300F141DF /* CarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 				C41B6C991A706D0E009B90AF /* Supporting Files */,
 				C41B6CC11A71CF78009B90AF /* MyViewController.h */,
 				C41B6CC21A71CF78009B90AF /* MyViewController.m */,
+				C4B1F6FE1A73046E00F141DF /* Car.h */,
+				C4B1F6FF1A73046E00F141DF /* Car.m */,
+				C4B1F7011A7306D300F141DF /* CarCell.h */,
+				C4B1F7021A7306D300F141DF /* CarCell.m */,
 			);
 			path = TableViewExample;
 			sourceTree = "<group>";
@@ -228,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B1F7001A73046E00F141DF /* Car.m in Sources */,
 				C41B6CA21A706D0E009B90AF /* ViewController.m in Sources */,
+				C4B1F7031A7306D300F141DF /* CarCell.m in Sources */,
 				C41B6C9F1A706D0E009B90AF /* AppDelegate.m in Sources */,
 				C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */,
 				C41B6C9C1A706D0E009B90AF /* main.m in Sources */,
@@ -422,6 +434,7 @@
 				C41B6CBB1A706D0E009B90AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C41B6CBC1A706D0E009B90AF /* Build configuration list for PBXNativeTarget "TableViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				C41B6CBE1A706D0E009B90AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

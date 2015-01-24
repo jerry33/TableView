@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "MyViewController.h"
+#import "Car.h"
+#import "CarCell.h"
+
+#define CELL_ID @"CarCell"
 
 @interface ViewController ()
 
@@ -17,10 +21,29 @@
     NSArray *tableData;
 }
 
+- (id)initWithStyle:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
+    if(self) {
+        //custom initialization
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     tableData = [NSArray arrayWithObjects:@"Jozko", @"Misko", @"Anka", @"Ferko", @"Zuzka", @"Jarko", @"Miska", nil];
+    self.cars = [NSMutableArray arrayWithCapacity:tableData.count];
+    
+    for (int i = 0; i < tableData.count; i++) {
+        Car *car = [[Car alloc] init];
+        car.title = [tableData objectAtIndex:i];
+        [self.cars addObject:car];
+    }
+    
+    [self.tableView registerClass:[CarCell class] forCellReuseIdentifier:@"Cell"];
+    
+    self.navigationItem.title = @"Cars";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,44 +56,37 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+    static NSString *simpleTableIdentifier = CELL_ID;
+
+    CarCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
+    Car *currCar = [self.cars objectAtIndex:indexPath.row];
+    cell.titleLabel.text = currCar.title;
+    NSLog(@"%@", cell.titleLabel.text);
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    UIAlertView *uiAlertView = [[UIAlertView alloc]
-//                                initWithTitle:@"Clicked"
-//                                message:[NSString stringWithFormat:@"Just clicked %@", [tableData objectAtIndex:indexPath.row]]
-//                                delegate:self
-//                                cancelButtonTitle:@"Cancel"
-//                                otherButtonTitles:@"Yeah", nil];
-//    [uiAlertView show];
+    UIAlertView *uiAlertView = [[UIAlertView alloc]
+                                initWithTitle:@"Clicked"
+                                message:[NSString stringWithFormat:@"Just clicked %@", [tableData objectAtIndex:indexPath.row]]
+                                delegate:self
+                                cancelButtonTitle:@"Cancel"
+                                otherButtonTitles:@"Yeah", nil];
+    [uiAlertView show];
 //    MyViewController *myViewController = [[MyViewController alloc] initWithNibName:@"MyViewController" bundle:nil];
 //    MyViewController *myViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myViewController"];
 //    [self.navigationController pushViewController:myViewController animated:YES];
-    self.name = [tableData objectAtIndex:indexPath.row];
-    NSLog(@"%@", self.name);
-    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
+//    self.name = [tableData objectAtIndex:indexPath.row];
+//    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
     
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"mehehe");
+    
     if ([segue.identifier isEqualToString:@"showDetailSegue"]) {
         MyViewController *myViewController = (MyViewController*)[segue destinationViewController];
-//        UINavigationController *navController = (UINavigationController*)[segue destinationViewController];
-//        MyViewController *myViewController = (MyViewController*)[navController topViewController];
         myViewController.name = self.name;
     }
 }

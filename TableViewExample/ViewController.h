@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSMutableArray *cars;
 
 @end
 
