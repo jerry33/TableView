@@ -11,5 +11,6 @@
 @implementation Car
 
 @synthesize title;
+@synthesize imagePath;
 
 @end

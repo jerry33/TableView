@@ -11,6 +11,8 @@
 @interface ViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *tableData;
+@property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) NSMutableArray *cars;
 
 @end

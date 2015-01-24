@@ -11,5 +11,6 @@
 @interface CarCell : UITableViewCell
 
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *carImageView;
 
 @end

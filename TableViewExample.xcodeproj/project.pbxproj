@@ -18,6 +18,13 @@
 		C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CC21A71CF78009B90AF /* MyViewController.m */; };
 		C4B1F7001A73046E00F141DF /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F6FF1A73046E00F141DF /* Car.m */; };
 		C4B1F7031A7306D300F141DF /* CarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F7021A7306D300F141DF /* CarCell.m */; };
+		C4E32C341A73228B00F18DF9 /* AutoRacing_TouringCar.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C2D1A73228B00F18DF9 /* AutoRacing_TouringCar.png */; };
+		C4E32C351A73228B00F18DF9 /* executive.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C2E1A73228B00F18DF9 /* executive.png */; };
+		C4E32C361A73228B00F18DF9 /* ferrari.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C2F1A73228B00F18DF9 /* ferrari.png */; };
+		C4E32C371A73228B00F18DF9 /* hyundai_coupe.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C301A73228B00F18DF9 /* hyundai_coupe.png */; };
+		C4E32C381A73228B00F18DF9 /* car_black.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C311A73228B00F18DF9 /* car_black.png */; };
+		C4E32C391A73228B00F18DF9 /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C321A73228B00F18DF9 /* Car.png */; };
+		C4E32C3A1A73228B00F18DF9 /* pagani.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C331A73228B00F18DF9 /* pagani.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		C4B1F6FF1A73046E00F141DF /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		C4B1F7011A7306D300F141DF /* CarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCell.h; sourceTree = "<group>"; };
 		C4B1F7021A7306D300F141DF /* CarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCell.m; sourceTree = "<group>"; };
+		C4E32C2D1A73228B00F18DF9 /* AutoRacing_TouringCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AutoRacing_TouringCar.png; path = ../../../../Downloads/AutoRacing_TouringCar.png; sourceTree = "<group>"; };
+		C4E32C2E1A73228B00F18DF9 /* executive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = executive.png; path = ../../../../Downloads/executive.png; sourceTree = "<group>"; };
+		C4E32C2F1A73228B00F18DF9 /* ferrari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ferrari.png; path = ../../../../Downloads/ferrari.png; sourceTree = "<group>"; };
+		C4E32C301A73228B00F18DF9 /* hyundai_coupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hyundai_coupe.png; path = ../../../../Downloads/hyundai_coupe.png; sourceTree = "<group>"; };
+		C4E32C311A73228B00F18DF9 /* car_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_black.png; path = ../../../../Downloads/car_black.png; sourceTree = "<group>"; };
+		C4E32C321A73228B00F18DF9 /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Car.png; path = ../../../../Downloads/Car.png; sourceTree = "<group>"; };
+		C4E32C331A73228B00F18DF9 /* pagani.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pagani.png; path = ../../../../Downloads/pagani.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,13 @@
 		C41B6C981A706D0E009B90AF /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				C4E32C2D1A73228B00F18DF9 /* AutoRacing_TouringCar.png */,
+				C4E32C2E1A73228B00F18DF9 /* executive.png */,
+				C4E32C2F1A73228B00F18DF9 /* ferrari.png */,
+				C4E32C301A73228B00F18DF9 /* hyundai_coupe.png */,
+				C4E32C311A73228B00F18DF9 /* car_black.png */,
+				C4E32C321A73228B00F18DF9 /* Car.png */,
+				C4E32C331A73228B00F18DF9 /* pagani.png */,
 				C41B6CBF1A71C4EB009B90AF /* creme_brelee.jpg */,
 				C41B6C9D1A706D0E009B90AF /* AppDelegate.h */,
 				C41B6C9E1A706D0E009B90AF /* AppDelegate.m */,
@@ -217,10 +238,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E32C391A73228B00F18DF9 /* Car.png in Resources */,
 				C41B6CA51A706D0E009B90AF /* Main.storyboard in Resources */,
+				C4E32C3A1A73228B00F18DF9 /* pagani.png in Resources */,
+				C4E32C371A73228B00F18DF9 /* hyundai_coupe.png in Resources */,
+				C4E32C341A73228B00F18DF9 /* AutoRacing_TouringCar.png in Resources */,
 				C41B6CC01A71C4EB009B90AF /* creme_brelee.jpg in Resources */,
+				C4E32C361A73228B00F18DF9 /* ferrari.png in Resources */,
 				C41B6CAA1A706D0E009B90AF /* LaunchScreen.xib in Resources */,
+				C4E32C351A73228B00F18DF9 /* executive.png in Resources */,
 				C41B6CA71A706D0E009B90AF /* Images.xcassets in Resources */,
+				C4E32C381A73228B00F18DF9 /* car_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

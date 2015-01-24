@@ -17,9 +17,7 @@
 
 @end
 
-@implementation ViewController {
-    NSArray *tableData;
-}
+@implementation ViewController
 
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
@@ -32,27 +30,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    tableData = [NSArray arrayWithObjects:@"Jozko", @"Misko", @"Anka", @"Ferko", @"Zuzka", @"Jarko", @"Miska", nil];
-    self.cars = [NSMutableArray arrayWithCapacity:tableData.count];
+    self.tableData = [NSArray arrayWithObjects:@"Jozko", @"Misko", @"Anka", @"Ferko", @"Zuzka", @"Jarko", @"Miska", nil];
+    self.images = [NSArray arrayWithObjects:@"AutoRacing_TouringCar.png",
+                   @"executive.png",
+                   @"ferrari.png",
+                   @"hyundai_coupe.png",
+                   @"car_black.png",
+                   @"Car.png",
+                   @"pagani.png",
+                   nil];
+    self.cars = [NSMutableArray arrayWithCapacity:self.tableData.count];
     
-    for (int i = 0; i < tableData.count; i++) {
+    for (int i = 0; i < self.tableData.count; i++) {
         Car *car = [[Car alloc] init];
-        car.title = [tableData objectAtIndex:i];
+        car.title = [self.tableData objectAtIndex:i];
+        car.imagePath = [self.images objectAtIndex:i];
         [self.cars addObject:car];
     }
     
     [self.tableView registerClass:[CarCell class] forCellReuseIdentifier:@"Cell"];
-    
     self.navigationItem.title = @"Cars";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [tableData count];
+    return [self.tableData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,6 +66,7 @@
     CarCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
     Car *currCar = [self.cars objectAtIndex:indexPath.row];
     cell.titleLabel.text = currCar.title;
+    cell.imageView.image = [UIImage imageNamed:currCar.imagePath];
     NSLog(@"%@", cell.titleLabel.text);
     
     return cell;
@@ -68,18 +74,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    /*
     UIAlertView *uiAlertView = [[UIAlertView alloc]
                                 initWithTitle:@"Clicked"
-                                message:[NSString stringWithFormat:@"Just clicked %@", [tableData objectAtIndex:indexPath.row]]
+                                message:[NSString stringWithFormat:@"Just clicked %@",
+                                         [self.tableData objectAtIndex:indexPath.row]]
                                 delegate:self
                                 cancelButtonTitle:@"Cancel"
                                 otherButtonTitles:@"Yeah", nil];
     [uiAlertView show];
-//    MyViewController *myViewController = [[MyViewController alloc] initWithNibName:@"MyViewController" bundle:nil];
-//    MyViewController *myViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myViewController"];
-//    [self.navigationController pushViewController:myViewController animated:YES];
-//    self.name = [tableData objectAtIndex:indexPath.row];
-//    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
+    MyViewController *myViewController = [[MyViewController alloc] initWithNibName:@"MyViewController" bundle:nil];
+    MyViewController *myViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myViewController"];
+    [self.navigationController pushViewController:myViewController animated:YES];
+     */
+    
+    self.name = [self.tableData objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
     
 }
 
@@ -87,6 +97,7 @@
     
     if ([segue.identifier isEqualToString:@"showDetailSegue"]) {
         MyViewController *myViewController = (MyViewController*)[segue destinationViewController];
+        NSLog(@"Name = %@", self.name);
         myViewController.name = self.name;
     }
 }
