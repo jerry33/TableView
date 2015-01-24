@@ -25,6 +25,8 @@
 		C4E32C381A73228B00F18DF9 /* car_black.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C311A73228B00F18DF9 /* car_black.png */; };
 		C4E32C391A73228B00F18DF9 /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C321A73228B00F18DF9 /* Car.png */; };
 		C4E32C3A1A73228B00F18DF9 /* pagani.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C331A73228B00F18DF9 /* pagani.png */; };
+		C4E32C3D1A732F5300F18DF9 /* aston_martin.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C3B1A732F5300F18DF9 /* aston_martin.png */; };
+		C4E32C3E1A732F5300F18DF9 /* rock_garageband_guitar_jazz_music_instrument.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E32C3C1A732F5300F18DF9 /* rock_garageband_guitar_jazz_music_instrument.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		C4E32C311A73228B00F18DF9 /* car_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_black.png; path = ../../../../Downloads/car_black.png; sourceTree = "<group>"; };
 		C4E32C321A73228B00F18DF9 /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Car.png; path = ../../../../Downloads/Car.png; sourceTree = "<group>"; };
 		C4E32C331A73228B00F18DF9 /* pagani.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pagani.png; path = ../../../../Downloads/pagani.png; sourceTree = "<group>"; };
+		C4E32C3B1A732F5300F18DF9 /* aston_martin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aston_martin.png; path = ../../../../Downloads/aston_martin.png; sourceTree = "<group>"; };
+		C4E32C3C1A732F5300F18DF9 /* rock_garageband_guitar_jazz_music_instrument.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rock_garageband_guitar_jazz_music_instrument.png; path = ../../../../Downloads/rock_garageband_guitar_jazz_music_instrument.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		C41B6C981A706D0E009B90AF /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				C4E32C3B1A732F5300F18DF9 /* aston_martin.png */,
+				C4E32C3C1A732F5300F18DF9 /* rock_garageband_guitar_jazz_music_instrument.png */,
 				C4E32C2D1A73228B00F18DF9 /* AutoRacing_TouringCar.png */,
 				C4E32C2E1A73228B00F18DF9 /* executive.png */,
 				C4E32C2F1A73228B00F18DF9 /* ferrari.png */,
@@ -241,6 +247,7 @@
 				C4E32C391A73228B00F18DF9 /* Car.png in Resources */,
 				C41B6CA51A706D0E009B90AF /* Main.storyboard in Resources */,
 				C4E32C3A1A73228B00F18DF9 /* pagani.png in Resources */,
+				C4E32C3E1A732F5300F18DF9 /* rock_garageband_guitar_jazz_music_instrument.png in Resources */,
 				C4E32C371A73228B00F18DF9 /* hyundai_coupe.png in Resources */,
 				C4E32C341A73228B00F18DF9 /* AutoRacing_TouringCar.png in Resources */,
 				C41B6CC01A71C4EB009B90AF /* creme_brelee.jpg in Resources */,
@@ -248,6 +255,7 @@
 				C41B6CAA1A706D0E009B90AF /* LaunchScreen.xib in Resources */,
 				C4E32C351A73228B00F18DF9 /* executive.png in Resources */,
 				C41B6CA71A706D0E009B90AF /* Images.xcassets in Resources */,
+				C4E32C3D1A732F5300F18DF9 /* aston_martin.png in Resources */,
 				C4E32C381A73228B00F18DF9 /* car_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
