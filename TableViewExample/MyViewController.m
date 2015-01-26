@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
     NSLog(@"%@", self.name);
     _myNewLabel.text = [NSString stringWithFormat:@"My name is %@", self.name];

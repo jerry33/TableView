@@ -15,5 +15,7 @@
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) NSMutableArray *cars;
 
+- (void)showAlert;
+
 @end
 

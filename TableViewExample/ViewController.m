@@ -50,6 +50,20 @@
     
     [self.tableView registerClass:[CarCell class] forCellReuseIdentifier:@"Cell"];
     self.navigationItem.title = @"Cars";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                              initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                              target:self
+                                              action:@selector(showAlert)];
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor
+                                                            colorWithRed:255.0/255
+                                                            green:135.0/255
+                                                            blue:0.0/255
+                                                            alpha:1.0];
+    self.tabBarController.tabBar.tintColor = [UIColor
+                                               colorWithRed:255.0/255 green:135.0/255 blue:0.0/255 alpha:1.0];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,6 +115,18 @@
         NSLog(@"Name = %@", self.name);
         myViewController.name = self.name;
     }
+}
+
+- (void)showAlert {
+    
+    UIAlertView *uiAlertView = [[UIAlertView alloc]
+                                initWithTitle:@"Clicked"
+                                message: @"Alert showed up :)"
+                                delegate:self
+                                cancelButtonTitle:@"Cancel"
+                                otherButtonTitles:@"Yeah", nil];
+    [uiAlertView show];
+    
 }
 
 @end
