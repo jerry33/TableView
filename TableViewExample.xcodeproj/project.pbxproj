@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41909C21A76E0CF0012104A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41909C11A76E0CF0012104A /* LoginViewController.m */; };
+		C41909C41A76E4C30012104A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C41909C31A76E4C30012104A /* logo.png */; };
 		C41B6C9C1A706D0E009B90AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6C9B1A706D0E009B90AF /* main.m */; };
 		C41B6C9F1A706D0E009B90AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6C9E1A706D0E009B90AF /* AppDelegate.m */; };
 		C41B6CA21A706D0E009B90AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CA11A706D0E009B90AF /* ViewController.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41909C01A76E0CF0012104A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C41909C11A76E0CF0012104A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C41909C31A76E4C30012104A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		C41B6C961A706D0E009B90AF /* TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41B6C9A1A706D0E009B90AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41B6C9B1A706D0E009B90AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +130,8 @@
 				C4B1F6FF1A73046E00F141DF /* Car.m */,
 				C4B1F7011A7306D300F141DF /* CarCell.h */,
 				C4B1F7021A7306D300F141DF /* CarCell.m */,
+				C41909C01A76E0CF0012104A /* LoginViewController.h */,
+				C41909C11A76E0CF0012104A /* LoginViewController.m */,
 			);
 			path = TableViewExample;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 		C4D95C771A75BE2100540BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C41909C31A76E4C30012104A /* logo.png */,
 				C4D95C8E1A75BFB900540BB8 /* aston_martin.png */,
 				C4D95C8F1A75BFB900540BB8 /* AutoRacing_TouringCar.png */,
 				C4D95C901A75BFB900540BB8 /* car_black.png */,
@@ -256,6 +264,7 @@
 				C4D95CA01A75BFB900540BB8 /* pagani.png in Resources */,
 				C4D95C9F1A75BFB900540BB8 /* hyundai_coupe.png in Resources */,
 				C4D95CA11A75BFB900540BB8 /* rock_garageband_guitar_jazz_music_instrument.png in Resources */,
+				C41909C41A76E4C30012104A /* logo.png in Resources */,
 				C4D95C9C1A75BFB900540BB8 /* creme_brelee.jpg in Resources */,
 				C4D95C991A75BFB900540BB8 /* AutoRacing_TouringCar.png in Resources */,
 				C4D95C9B1A75BFB900540BB8 /* Car.png in Resources */,
@@ -286,6 +295,7 @@
 				C41B6CA21A706D0E009B90AF /* ViewController.m in Sources */,
 				C4B1F7031A7306D300F141DF /* CarCell.m in Sources */,
 				C41B6C9F1A706D0E009B90AF /* AppDelegate.m in Sources */,
+				C41909C21A76E0CF0012104A /* LoginViewController.m in Sources */,
 				C41B6CC31A71CF78009B90AF /* MyViewController.m in Sources */,
 				C41B6C9C1A706D0E009B90AF /* main.m in Sources */,
 			);

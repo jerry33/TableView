@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HaD-ho-igJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LFA-rk-0MR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -20,21 +20,33 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                     <rect key="frame" x="16" y="389" width="368" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wbz-Me-mu3" secondAttribute="centerX" id="7dm-nw-juM"/>
+                            <constraint firstAttribute="centerY" secondItem="wbz-Me-mu3" secondAttribute="centerY" id="yqu-7h-iOk"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="wbz-Me-mu3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7dm-nw-juM"/>
+                                <exclude reference="yqu-7h-iOk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="wbz-Me-mu3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7dm-nw-juM"/>
+                                <include reference="yqu-7h-iOk"/>
                             </mask>
                         </variation>
                     </view>
@@ -44,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUg-YH-Pkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817.5" y="464.25"/>
+            <point key="canvasLocation" x="817.5" y="-39.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="n5O-ap-CSh">
@@ -107,6 +119,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
+                            <outlet property="dataSource" destination="FVM-fD-aYg" id="HLn-UQ-5yX"/>
                             <outlet property="delegate" destination="FVM-fD-aYg" id="vpB-Hv-3w1"/>
                         </connections>
                     </tableView>
@@ -117,7 +130,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4w-TY-B5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85.5" y="464.25"/>
+            <point key="canvasLocation" x="-85.5" y="-39.75"/>
         </scene>
         <!--Cars-->
         <scene sceneID="L43-I1-LWg">
@@ -136,7 +149,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Np-qS-nD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-928.5" y="464.25"/>
+            <point key="canvasLocation" x="-928.5" y="-39.75"/>
         </scene>
         <!--Instruments-->
         <scene sceneID="lDN-mm-v63">
@@ -155,7 +168,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sag-IK-WfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-928.5" y="1171.5"/>
+            <point key="canvasLocation" x="-928.5" y="625.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="X5P-xK-OU8">
+            <objects>
+                <viewController id="LFA-rk-0MR" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u32-sc-XhS"/>
+                        <viewControllerLayoutGuide type="bottom" id="epf-il-X8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oVE-Ec-mQ0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-hp-8zH">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.52941176470588236" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="358" width="259" height="38"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yV-h2-4mH">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.52941176470588236" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="404" width="259" height="38"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Are-Bp-sjv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.47843137254901957" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="450" width="259" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="signIn:" destination="LFA-rk-0MR" eventType="touchUpInside" id="uZW-IY-z2i"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jWz-nU-WA1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="61" width="234" height="225"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lPb-hp-8zH"/>
+                                <exclude reference="6yV-h2-4mH"/>
+                                <exclude reference="Are-Bp-sjv"/>
+                                <exclude reference="jWz-nU-WA1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lPb-hp-8zH"/>
+                                <include reference="6yV-h2-4mH"/>
+                                <include reference="Are-Bp-sjv"/>
+                                <include reference="jWz-nU-WA1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="username" destination="lPb-hp-8zH" id="FoG-7k-Hnc"/>
+                        <segue destination="HaD-ho-igJ" kind="show" identifier="signInSegue" id="OWm-nV-WVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZL-v9-P7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2914.5" y="464.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mu9-f1-bq4">
@@ -177,4 +270,7 @@
             <point key="canvasLocation" x="-1846.5" y="464.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.png" width="697" height="858"/>
+    </resources>
 </document>
