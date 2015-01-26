@@ -14,5 +14,4 @@
 @property (nonatomic) NSString *name;
 @property (weak, nonatomic) IBOutlet UILabel *myNewLabel;
 
-
 @end

@@ -67,6 +67,7 @@
     Car *currCar = [self.cars objectAtIndex:indexPath.row];
     cell.titleLabel.text = currCar.title;
     cell.imageView.image = [UIImage imageNamed:currCar.imagePath];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     NSLog(@"%@", cell.titleLabel.text);
     
     return cell;
